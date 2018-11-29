@@ -22,4 +22,4 @@ build:
 
 use-my-step:
   steps:
-    - shtfresh/wercker-steps-template@1.0.0
+    - shtfresh/hello-world@1.0.0
