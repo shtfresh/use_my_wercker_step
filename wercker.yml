@@ -1,0 +1,25 @@
+box:
+  id: openjdk:8-jdk
+  ports:
+    - 8080
+
+dev:
+  steps:
+    - script:
+        name: info/env
+        code: env
+    - internal/watch:
+        name: Run and Watch
+        code: |
+          ./gradlew bootRun
+        reload: true
+        
+build:
+  steps:
+    - script:
+        name: info/env
+        code: env
+
+use-my-step:
+  steps:
+    - shtfresh/wercker-steps-template@1.0.0
