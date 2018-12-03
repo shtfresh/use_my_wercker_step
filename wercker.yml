@@ -39,4 +39,4 @@ use-helm-step:
     - script:
          name: install soft
          code:  |
-           helm install --name="stable/mysql"
+           $WERCKER_STEP_ROOT/helm install --name="stable/mysql"
