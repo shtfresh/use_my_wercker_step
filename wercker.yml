@@ -32,11 +32,12 @@ use-helm-step:
         cluster-name: $KUBE_CLUSTER_NAME
         context-name: $KUBE_CONTEXT_NAME
         insecure-skip-tls-verify: true
-    - script:
-         name: show message
-         code:  |
-           cat $HOME/.kube/config
-    - script:
-         name: install soft
-         code:  |
-           $WERCKER_STEP_ROOT/helm install --name="stable/mysql"
+        command: install stable/mysql
+#    - script:
+#         name: show message
+#         code:  |
+#           cat $HOME/.kube/config
+#    - script:
+#         name: install soft
+#         code:  |
+#         helm install --name="stable/mysql"
