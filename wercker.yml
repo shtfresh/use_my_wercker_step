@@ -12,8 +12,7 @@ dev:
         name: Run and Watch
         code: |
           ./gradlew bootRun
-        reload: true
-        
+        reload: true 
 build:
   steps:
     - script:
