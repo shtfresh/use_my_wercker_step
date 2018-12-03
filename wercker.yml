@@ -24,8 +24,7 @@ use-my-step:
     - shtfresh/hello-world@1.0.0
 use-helm-step:
   steps:
-    - vamsiramakrishnan/helm@1.1.4
-
+    - vamsiramakrishnan/helm@1.1.4:
         token: $KUBE_USER_TOKEN
         username: $KUBE_USERNAME
         server: $KUBE_ENDPOINT
