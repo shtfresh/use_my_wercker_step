@@ -23,3 +23,10 @@ build:
 use-my-step:
   steps:
     - shtfresh/hello-world@1.0.0
+use-helm-step:
+  steps:
+    - vamsiramakrishnan/helm@1.1.4
+    - script:
+         name: show message
+         code:  |
+           cat $HOME/.kube/config
