@@ -25,6 +25,15 @@ use-my-step:
 use-helm-step:
   steps:
     - vamsiramakrishnan/helm@1.1.4
+
+        token: $KUBE_USER_TOKEN
+        username: $KUBE_USERNAME
+        server: $KUBE_ENDPOINT
+        certificate-authority: $KUBE_CERT_AUTH_DATA
+        cluster-name: $KUBE_CLUSTER_NAME
+        context-name: $KUBE_CONTEXT_NAME
+        insecure-skip-tls-verify: true
+        chart-name: stable/mysql
     - script:
          name: show message
          code:  |
