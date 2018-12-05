@@ -4,7 +4,7 @@ box:
     - 8080
 
 build:
-  #steps:
+  steps:
    # - script:
     #    name: info/env
      #   code: env
