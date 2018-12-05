@@ -1,17 +1,10 @@
 box:
   id: openjdk:8-jdk
-  ports:
-    - 8080
-
 build:
   steps:
-   # - script:
-    #    name: info/env
-     #   code: env
-
 use-my-step:
   steps:
-    - shtfresh/hello-world@1.0.0
+    - shtfresh/hello-world@1.0.1
 use-helm-step:
   steps:
     - vamsiramakrishnan/helm@1.1.4:
