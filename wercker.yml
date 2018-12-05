@@ -3,21 +3,11 @@ box:
   ports:
     - 8080
 
-dev:
-  steps:
-    - script:
-        name: info/env
-        code: env
-    - internal/watch:
-        name: Run and Watch
-        code: |
-          ./gradlew bootRun
-        reload: true 
 build:
-  steps:
-    - script:
-        name: info/env
-        code: env
+  #steps:
+   # - script:
+    #    name: info/env
+     #   code: env
 
 use-my-step:
   steps:
